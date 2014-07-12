@@ -75,7 +75,7 @@ public class XIRR {
 		}
 
 		System.out.println( "XIRR Result - " + result ) ;
-		return (result != Double.NaN) ? (result - 1) : result ;
+		return (Double.isNaN(result)) ? (result - 1) : result ;
 	}
 
 }   /*  End of the XIRR class. */
